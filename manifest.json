@@ -1,0 +1,13 @@
+{
+  "name": "Google Forms Results: Pie Chart Makeover",
+  "description": "Finally, a Chrome extension that brings order to the color chaos! Your Google Forms pie chart segment colors, now logically ordered and visually appealing.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["https://docs.google.com/forms/*"],
+      "js": ["inject.js"]
+    }
+  ],
+  "host_permissions": ["<all_urls>"]
+}
